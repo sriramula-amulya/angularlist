@@ -1,0 +1,21 @@
+<br><br>
+<div class="container">
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Task ID</th>
+        <th scope="col">Task Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let todo of todos">
+        <td >{{todo.id}}</td>
+        <td>{{todo.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+</div>

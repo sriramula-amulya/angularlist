@@ -1,0 +1,35 @@
+
+<div class="container">
+    <div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" 
+            [routerLink]="['']" 
+            routerLinkActive="router-link-active"
+            >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" 
+            [routerLink]="['/addlist']" 
+            routerLinkActive="router-link-active"
+            >Add List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" 
+            [routerLink]="['/viewlist']"
+            routerLinkActive="router-link-active">View List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+     
+    <app-header></app-header>
+  
+    <app-main></app-main>
+    <router-outlet></router-outlet>
+</div>
+ 
+
+
